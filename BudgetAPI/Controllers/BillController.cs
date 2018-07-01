@@ -41,9 +41,9 @@ namespace BudgetAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateBill(int billdID, Bill bill)
+        public IActionResult UpdateBill(int billID, Bill bill)
         {
-            var dbBill = _dbContext.Bills.Find(billdID);
+            var dbBill = _dbContext.Bills.Find(billID);
             if(dbBill == null)
             {
                 return NotFound();

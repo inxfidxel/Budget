@@ -1,24 +1,24 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using BudgetAPI.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
-namespace TodoApi
+namespace BudgetAPI
 {
-    public class Startup
+    public class Program
     {
-        public void ConfigureServices(IServiceCollection services)
+        public static void Main(string[] args)
         {
-            services.AddDbContext<ApiDBContext>(opt =>
-                opt.UseInMemoryDatabase("Bills"));
-            services.AddMvc()
-                    .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            CreateWebHostBuilder(args).Build().Run();
         }
 
-        public void Configure(IApplicationBuilder app)
-        {
-            app.UseMvc();
-        }
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>();
     }
 }
