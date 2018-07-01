@@ -1,0 +1,47 @@
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2018-07-01 15:36:54
+count workspace : d:\dev\money\BudgetAPI
+total files : 35
+total code lines : 16697
+total comment lines : 25
+total blank lines : 315
+
+appsettings.Development.json, code is 9, comment is 0, blank is 0.
+appsettings.json, code is 8, comment is 0, blank is 0.
+bin\Debug\netcoreapp2.1\BudgetAPI.deps.json, code is 5098, comment is 0, blank is 1.
+bin\Debug\netcoreapp2.1\BudgetAPI.dll, it is a binary file.
+bin\Debug\netcoreapp2.1\BudgetAPI.pdb, it is a binary file.
+bin\Debug\netcoreapp2.1\BudgetAPI.runtimeconfig.dev.json, code is 8, comment is 0, blank is 1.
+bin\Debug\netcoreapp2.1\BudgetAPI.runtimeconfig.json, code is 12, comment is 0, blank is 0.
+BudgetAPI.csproj, code is 6, comment is 0, blank is 2.
+Controllers\BillController.cs, code is 56, comment is 0, blank is 7.
+Controllers\ValuesController.cs, code is 35, comment is 5, blank is 5.
+Models\ApiDBContext.cs, code is 9, comment is 0, blank is 2.
+Models\Bill.cs, code is 13, comment is 0, blank is 1.
+Models\PaySchedule.cs, code is 14, comment is 0, blank is 1.
+obj\BudgetAPI.csproj.nuget.cache, code is 5, comment is 0, blank is 0.
+obj\BudgetAPI.csproj.nuget.g.props, code is 24, comment is 0, blank is 0.
+obj\BudgetAPI.csproj.nuget.g.targets, code is 15, comment is 0, blank is 0.
+obj\Debug\netcoreapp2.1\BudgetAPI.AssemblyInfo.cs, code is 9, comment is 10, blank is 4.
+obj\Debug\netcoreapp2.1\BudgetAPI.AssemblyInfoInputs.cache, code is 1, comment is 0, blank is 0.
+obj\Debug\netcoreapp2.1\BudgetAPI.assets.cache, it is a binary file.
+obj\Debug\netcoreapp2.1\BudgetAPI.csproj.CoreCompileInputs.cache, code is 1, comment is 0, blank is 0.
+obj\Debug\netcoreapp2.1\BudgetAPI.csproj.FileListAbsolute.txt, code is 14, comment is 0, blank is 0.
+obj\Debug\netcoreapp2.1\BudgetAPI.csprojAssemblyReference.cache, it is a binary file.
+obj\Debug\netcoreapp2.1\BudgetAPI.csprojResolveAssemblyReference.cache, it is a binary file.
+obj\Debug\netcoreapp2.1\BudgetAPI.dll, it is a binary file.
+obj\Debug\netcoreapp2.1\BudgetAPI.pdb, it is a binary file.
+obj\Debug\netcoreapp2.1\BudgetAPI.RazorAssemblyInfo.cache, code is 1, comment is 0, blank is 0.
+obj\Debug\netcoreapp2.1\BudgetAPI.RazorAssemblyInfo.cs, code is 6, comment is 10, blank is 4.
+obj\Debug\netcoreapp2.1\BudgetAPI.RazorTargetAssemblyInfo.cache, code is 1, comment is 0, blank is 0.
+obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs, code is 0, comment is 0, blank is 0.
+obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs, code is 0, comment is 0, blank is 0.
+obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs, code is 0, comment is 0, blank is 0.
+obj\project.assets.json, code is 11278, comment is 0, blank is 283.
+Program.cs, code is 22, comment is 0, blank is 2.
+Properties\launchSettings.json, code is 30, comment is 0, blank is 0.
+Startup.cs, code is 22, comment is 0, blank is 2.
+===============================================================================

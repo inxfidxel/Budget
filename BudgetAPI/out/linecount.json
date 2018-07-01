@@ -1,0 +1,234 @@
+{
+    "extension": "linecount",
+    "version": "0.1.7",
+    "workspace": "d:\\dev\\money\\BudgetAPI",
+    "linecount": [
+        {
+            "version": "0.1.7",
+            "counttime": "2018-07-01 15:36:54",
+            "filesum": 35,
+            "codesum": 16697,
+            "commentsum": 25,
+            "blanksum": 315,
+            "filelist": [
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "appsettings.Development.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "appsettings.json"
+                },
+                {
+                    "blank": 1,
+                    "code": 5098,
+                    "comment": 0,
+                    "filename": "bin\\Debug\\netcoreapp2.1\\BudgetAPI.deps.json"
+                },
+                {
+                    "filename": "bin\\Debug\\netcoreapp2.1\\BudgetAPI.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "bin\\Debug\\netcoreapp2.1\\BudgetAPI.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "bin\\Debug\\netcoreapp2.1\\BudgetAPI.runtimeconfig.dev.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "bin\\Debug\\netcoreapp2.1\\BudgetAPI.runtimeconfig.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "BudgetAPI.csproj"
+                },
+                {
+                    "blank": 7,
+                    "code": 56,
+                    "comment": 0,
+                    "filename": "Controllers\\BillController.cs"
+                },
+                {
+                    "blank": 5,
+                    "code": 35,
+                    "comment": 5,
+                    "filename": "Controllers\\ValuesController.cs"
+                },
+                {
+                    "blank": 2,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "Models\\ApiDBContext.cs"
+                },
+                {
+                    "blank": 1,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "Models\\Bill.cs"
+                },
+                {
+                    "blank": 1,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "Models\\PaySchedule.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "obj\\BudgetAPI.csproj.nuget.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "obj\\BudgetAPI.csproj.nuget.g.props"
+                },
+                {
+                    "blank": 0,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "obj\\BudgetAPI.csproj.nuget.g.targets"
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 10,
+                    "filename": "obj\\Debug\\netcoreapp2.1\\BudgetAPI.AssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "obj\\Debug\\netcoreapp2.1\\BudgetAPI.AssemblyInfoInputs.cache"
+                },
+                {
+                    "filename": "obj\\Debug\\netcoreapp2.1\\BudgetAPI.assets.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "obj\\Debug\\netcoreapp2.1\\BudgetAPI.csproj.CoreCompileInputs.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "obj\\Debug\\netcoreapp2.1\\BudgetAPI.csproj.FileListAbsolute.txt"
+                },
+                {
+                    "filename": "obj\\Debug\\netcoreapp2.1\\BudgetAPI.csprojAssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "obj\\Debug\\netcoreapp2.1\\BudgetAPI.csprojResolveAssemblyReference.cache",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "obj\\Debug\\netcoreapp2.1\\BudgetAPI.dll",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "obj\\Debug\\netcoreapp2.1\\BudgetAPI.pdb",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "obj\\Debug\\netcoreapp2.1\\BudgetAPI.RazorAssemblyInfo.cache"
+                },
+                {
+                    "blank": 4,
+                    "code": 6,
+                    "comment": 10,
+                    "filename": "obj\\Debug\\netcoreapp2.1\\BudgetAPI.RazorAssemblyInfo.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "obj\\Debug\\netcoreapp2.1\\BudgetAPI.RazorTargetAssemblyInfo.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "obj\\Debug\\netcoreapp2.1\\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "obj\\Debug\\netcoreapp2.1\\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "obj\\Debug\\netcoreapp2.1\\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs"
+                },
+                {
+                    "blank": 283,
+                    "code": 11278,
+                    "comment": 0,
+                    "filename": "obj\\project.assets.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 22,
+                    "comment": 0,
+                    "filename": "Program.cs"
+                },
+                {
+                    "blank": 0,
+                    "code": 30,
+                    "comment": 0,
+                    "filename": "Properties\\launchSettings.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 22,
+                    "comment": 0,
+                    "filename": "Startup.cs"
+                }
+            ]
+        }
+    ]
+}
