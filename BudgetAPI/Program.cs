@@ -1,24 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using BudgetAPI.Models;
 
-namespace BudgetAPI
+namespace TodoApi
 {
-    public class Program
+    public class Startup
     {
-        public static void Main(string[] args)
+        public void ConfigureServices(IServiceCollection services)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            services.AddDbContext<ApiDBContext>(opt =>
+                opt.UseInMemoryDatabase("Bills"));
+            services.AddMvc()
+                    .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+        public void Configure(IApplicationBuilder app)
+        {
+            app.UseMvc();
+        }
     }
 }
