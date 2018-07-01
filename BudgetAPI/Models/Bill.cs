@@ -9,5 +9,6 @@ namespace BudgetAPI.Models
         public decimal MinimumAmount { get; set; }
         public decimal PayAmount { get; set; }
         public decimal? BillBalance { get; set; }
+        public string BillName { get; set; }
     }
 }
