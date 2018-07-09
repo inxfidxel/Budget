@@ -9,22 +9,22 @@ namespace BudgetAPI.Controllers
     [ApiController]
     public class BillController : ControllerBase
     {
-        private readonly ApiDBContext _dbContext;
+        private readonly ApiDBContext _db;
         public BillController(ApiDBContext context)
         {
-            _dbContext = context;
+            _db = context;
         }
 
         [HttpGet]
         public ActionResult<List<Bill>> GetAll()
         {
-            return _dbContext.Bills.ToList();
+            return _db.Bills.ToList();
         }
 
         [HttpGet("{id}", Name = "GetBill")]
         public ActionResult<Bill> GetBill(int id)
         {
-            var bill = _dbContext.Bills.Find(id);
+            var bill = _db.Bills.Find(id);
             if(bill == null)
             {
                 return NotFound();
@@ -35,15 +35,15 @@ namespace BudgetAPI.Controllers
         [HttpPost]
         public IActionResult AddBill(Bill bill)
         {
-            _dbContext.Bills.Add(bill);
-            _dbContext.SaveChanges();
+            _db.Bills.Add(bill);
+            _db.SaveChanges();
             return CreatedAtRoute("GetBill", new {id = bill.BillID}, bill);
         }
 
         [HttpPut("{id}")]
         public IActionResult UpdateBill(int billID, Bill bill)
         {
-            var dbBill = _dbContext.Bills.Find(billID);
+            var dbBill = _db.Bills.Find(billID);
             if(dbBill == null)
             {
                 return NotFound();
@@ -51,12 +51,12 @@ namespace BudgetAPI.Controllers
 
             dbBill.BillBalance = bill.BillBalance;
             dbBill.DueDate = bill.DueDate;
-            dbBill.MinimumAmount = bill.MinimumAmount;
+            dbBill.MinimumPayment = bill.MinimumPayment;
             dbBill.PayAmount = bill.PayAmount;
             dbBill.BillName = bill.BillName;
 
-            _dbContext.Bills.Update(dbBill);
-            _dbContext.SaveChanges();
+            _db.Bills.Update(dbBill);
+            _db.SaveChanges();
             return NoContent();
         }
     }

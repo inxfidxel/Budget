@@ -6,7 +6,7 @@ namespace BudgetAPI.Models
     {
         public int BillID { get; set; }
         public DateTime DueDate { get; set; }
-        public decimal MinimumAmount { get; set; }
+        public decimal MinimumPayment { get; set; }
         public decimal PayAmount { get; set; }
         public decimal? BillBalance { get; set; }
         public string BillName { get; set; }
