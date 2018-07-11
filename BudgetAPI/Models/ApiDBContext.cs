@@ -7,5 +7,6 @@ namespace BudgetAPI.Models
         public ApiDBContext(DbContextOptions<ApiDBContext> options) : base(options){}
 
         public DbSet<Bill> Bills { get; set; }
+        public DbSet<PaySchedule> PaySchedules { get; set; }
     }
 }

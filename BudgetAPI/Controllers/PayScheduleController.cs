@@ -17,16 +17,23 @@ namespace BudgetAPI.Controllers
         }
 
         [HttpGet]
-        public ActionResult<PaySchedule> GetSchedule(DateTime paidDate, DateTime nextPaidDate, decimal currentCash, DateTime currentDate)
+        public ActionResult<PaySchedule> GetSchedule()
         {
-            var schedule = new PaySchedule
-            {
-                PaidDate = paidDate,
-                NextPaidDate = nextPaidDate,
-            };
+            var currentDate = DateTime.Now;
+            var sched = _db.PaySchedules.Where(x => x.PaidDate <= currentDate && currentDate <= x.NextPaidDate).FirstOrDefault();
 
-            schedule. _db.Bills.Sum(x => x.MinimumPayment);
+            sched.Bills = _db.Bills.Where(x => x.PayScheduleId == sched.PayScheduleId).ToList();
+            
+            return sched;
 
+        }
+
+        [HttpPost]
+        public IActionResult CreateSchedule(PaySchedule paySchedule)
+        {
+            _db.PaySchedules.Add(paySchedule);
+            _db.SaveChanges();
+            return CreatedAtRoute("GetSchedule", new {id = paySchedule.PayScheduleId}, paySchedule);
         }
     }
 }

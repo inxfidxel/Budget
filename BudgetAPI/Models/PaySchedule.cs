@@ -11,5 +11,6 @@ namespace BudgetAPI.Models
         public decimal TotalBills { get; set; }
         public decimal BillsPaidAmount { get; set; }
         public decimal CashLeftoverAmount { get; set; }
+        public int PayScheduleId { get; set; }
     }
 }

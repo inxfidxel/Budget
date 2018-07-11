@@ -10,5 +10,6 @@ namespace BudgetAPI.Models
         public decimal PayAmount { get; set; }
         public decimal? BillBalance { get; set; }
         public string BillName { get; set; }
+        public int PayScheduleId { get; set; }
     }
 }
