@@ -328,3 +328,8 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+BudgetAPI/obj/project.assets.json
+BudgetAPI/obj/BudgetAPI.csproj.nuget.g.props
+BudgetAPI/obj/BudgetAPI.csproj.nuget.g.props
+BudgetAPI/obj/BudgetAPI.csproj.nuget.g.targets
+BudgetAPI/obj/project.assets.json
