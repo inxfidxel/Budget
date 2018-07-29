@@ -11501,23 +11501,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/joshfurman/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Josh\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/joshfurman/dev/money/Budget/BudgetAPI/BudgetAPI.csproj",
+      "projectUniqueName": "d:\\dev\\money\\BudgetAPI\\BudgetAPI.csproj",
       "projectName": "BudgetAPI",
-      "projectPath": "/Users/joshfurman/dev/money/Budget/BudgetAPI/BudgetAPI.csproj",
-      "packagesPath": "/Users/joshfurman/.nuget/packages/",
-      "outputPath": "/Users/joshfurman/dev/money/Budget/BudgetAPI/obj/",
+      "projectPath": "d:\\dev\\money\\BudgetAPI\\BudgetAPI.csproj",
+      "packagesPath": "C:\\Users\\Josh\\.nuget\\packages\\",
+      "outputPath": "d:\\dev\\money\\BudgetAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/joshfurman/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Josh\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"

@@ -17,27 +17,10 @@ namespace BudgetAPI.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<PaySchedule>> GetAllSchedules()
-        {
-            var schedules = _db.PaySchedules.ToList();
-
-            foreach(var s in schedules)
-            {
-                s.Bills = _db.Bills.Where(b => b.PayScheduleId == s.PayScheduleId).ToList();
-            }
-            return schedules;
-        }
-
-        [HttpGet]
         public ActionResult<PaySchedule> GetSchedule(DateTime date)
         {
-
             var sched = _db.PaySchedules.Where(x => x.PaidDate <= date && date <= x.NextPaidDate).FirstOrDefault();
-
-            sched.Bills = _db.Bills.Where(x => x.PayScheduleId == sched.PayScheduleId).ToList();
-
             return sched;
-
         }
 
         [HttpPost]
@@ -46,6 +29,29 @@ namespace BudgetAPI.Controllers
             _db.PaySchedules.Add(paySchedule);
             _db.SaveChanges();
             return CreatedAtRoute("GetSchedule", new {id = paySchedule.PayScheduleId}, paySchedule);
+        }
+
+        [HttpGet]
+        public ActionResult<PayScheduleSummary> GetScheduleSummary(DateTime date)
+        {
+            var sched = _db.PaySchedules.Where(x => x.PaidDate <= date && date <= x.NextPaidDate).FirstOrDefault();
+            var bills = _db.Bills.Where(b => b.DueDate >= sched.PaidDate && b.DueDate < sched.NextPaidDate).ToList();
+            
+            
+            
+            var summary = new PayScheduleSummary
+            {
+                Schedule = sched,
+                Bills = bills,
+                TotalBills = bills.Sum(b => b.MinimumPayment)
+            };
+
+            //calculate what should have been paid 
+            var billsPaid = summary.Bills.Where(b => b.DueDate >= date).Sum(m => m.MinimumPayment);
+
+            summary.BillsPaidAmount = billsPaid;
+            summary.CashLeftoverAmount = summary.TotalBills - billsPaid;            
+            return summary;
         }
     }
 }
