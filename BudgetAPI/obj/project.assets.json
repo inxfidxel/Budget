@@ -11496,27 +11496,28 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
+      "Microsoft.EntityFrameworkCore.InMemory >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Josh\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/joshfurman/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\money\\BudgetAPI\\BudgetAPI.csproj",
+      "projectUniqueName": "/Users/joshfurman/dev/money/Budget/BudgetAPI/BudgetAPI.csproj",
       "projectName": "BudgetAPI",
-      "projectPath": "D:\\dev\\money\\BudgetAPI\\BudgetAPI.csproj",
-      "packagesPath": "C:\\Users\\Josh\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\money\\BudgetAPI\\obj\\",
+      "projectPath": "/Users/joshfurman/dev/money/Budget/BudgetAPI/BudgetAPI.csproj",
+      "packagesPath": "/Users/joshfurman/.nuget/packages/",
+      "outputPath": "/Users/joshfurman/dev/money/Budget/BudgetAPI/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Josh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/joshfurman/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -11543,6 +11544,10 @@
             "target": "Package",
             "version": "[2.1.1, )",
             "autoReferenced": true
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "[2.1.1, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
