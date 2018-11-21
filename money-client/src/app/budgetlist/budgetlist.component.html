@@ -1,0 +1,17 @@
+<div id="budget-list">
+	<ul>
+		<li *ngFor="let bill of budgetList">
+			{{bill.billName}}
+		</li>
+	</ul>
+
+</div>
+
+<div>
+	<h2>List of Caden Names</h2>
+	<ul>
+		<li *ngFor="let obj of cadenNames" ngStyle="color: {{obj.color}}" >
+			{{obj.name}}
+		</li>
+	</ul>
+</div>
